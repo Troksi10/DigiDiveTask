@@ -1,0 +1,23 @@
+.App {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #ede6e6;
+    border: 1px solid #0e0d0d;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App label {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.App img {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    display: block;
+}
