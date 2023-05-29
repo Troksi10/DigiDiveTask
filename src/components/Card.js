@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Card.css";
 import Avatar from "./assets/avatar.png";
+import { TbRotateClockwise } from "react-icons/tb";
 
 const Card = ({ setIsEditing, data, setData }) => {
   console.log(data);
@@ -14,24 +15,20 @@ const Card = ({ setIsEditing, data, setData }) => {
     if (items) {
       setData(items);
     }
-  }, []);
+  }, [setData]);
   return (
     <div className="App">
+      <TbRotateClockwise className="arrow" onClick={handleOnClick} />
       <form>
         <img src={Avatar} className="img" alt="true" />
         <div>
-          <label htmlFor="fname">First Name</label>
+          <label htmlFor="fname">{data.fn}</label>
         </div>
         <div>
-          <label htmlFor="lname">Last Name</label>
+          <label htmlFor="lname">{data.fn}</label>
         </div>
         <div>
-          <label htmlFor="">Office Location</label>
-        </div>
-        <div>
-          <button onClick={handleOnClick} className="btn">
-            Edit my profile
-          </button>
+          <label htmlFor="">{data.loc}</label>
         </div>
       </form>
     </div>

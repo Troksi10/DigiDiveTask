@@ -5,7 +5,7 @@ import EditCard from "./components/EditCard";
 
 function App() {
   const [isEditing, setIsEditing] = useState(false);
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
   return (
     <div className="App">
       {!isEditing ? (
